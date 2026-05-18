@@ -1,0 +1,7 @@
+interface:
+  display_name: "Strategic value writing"
+  short_description: "用于战略层级,向上汇报风格的赢学文字风格约束"
+  default_prompt: "Use $strategic-value-reporting to draft or revise an technical paragrapth in Chinese with a Managing-up, winology style."
+
+policy:
+  allow_implicit_invocation: true
