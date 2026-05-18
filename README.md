@@ -15,6 +15,28 @@
 - 面向一线开发者的 Runbook、排障指南、API 文档
 - 开源社区的 Issue 讨论或 PR 描述
 
+## 安装 QUICK START
+
+通过 [skills.sh](https://skills.sh) 一行装，自动检测当前 agent 并写入对应目录：
+
+```bash
+ npx skills add makisekuris/strategic-value-writing
+```
+
+支持 Claude Code、Cursor、Codex、GitHub Copilot、Windsurf、Gemini、Cline、AMP 等主流 agent runtime。装完在对应 agent 里用 Skill 工具调用 `technical-writing` 即可，也可以在项目的 CLAUDE.md / AGENTS.md 里把它列为常用 skill。
+
+### 手动安装（fallback）
+
+如果不想用 skills.sh，可以直接 clone 后软链接：
+
+```bash
+git clone https://github.com/makisekuris/strategic-value-writing.git ~/repos/strategic-value-writing
+mkdir -p ~/.claude/skills
+ln -s ~/repos/strategic-value-writing ~/.claude/skills/strategic-value-writing
+```
+
+OpenAI Codex 用户可参考 `agents/openai.yaml`，按 Codex 文档注册到本地。
+
 ## Credits
 
 灵感来源于 [luoling8192/technical-writing](https://github.com/luoling8192/technical-writing) 
